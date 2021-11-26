@@ -6,3 +6,9 @@ class Note:
     def init(self, note, d=False):
         self.d = d
         self.ind = self.PITCHES.index(note)
+
+    def str(self):
+        if self.d:
+            return self.LPITCHES[self.ind]
+        else:
+            return self.PITCHES[self.ind]
